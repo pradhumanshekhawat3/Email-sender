@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const sendEmail =  async (data) => {
     try{
-        const res  = await axios.post('https://vercel.com/pradhumanshekhawat3/mailing-api', data);
+        const res  = await axios.post('http://localhost:5000/sendemail', data);
         return res.data;
     }catch(err){
         if (err.response) {
